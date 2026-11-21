@@ -1,204 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Franco Alotinto - BSIT student seeking IT Support / Helpdesk and internship opportunities, with a background in web development.">
-  <meta property="og:title" content="Franco Alotinto | IT Support & Web Development">
-  <meta property="og:description" content="4th year BSIT student. Web development, information systems, and IT support.">
-  <meta property="og:image" content="profile.jpg">
-  <title>Franco Alotinto | IT Support &amp; Web Development</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23080b12'/%3E%3Ctext x='50' y='66' font-family='Arial' font-size='46' font-weight='700' text-anchor='middle' fill='%23f3f6fb'%3EFA%3C/text%3E%3Ccircle cx='82' cy='72' r='6' fill='%2362d5ff'/%3E%3C/svg%3E">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b1020" />
+  <meta name="description" content="Franco Alotinto — BS Information Technology student, aspiring IT professional and web developer." />
+  <title>Franco Alotinto | IT Student & Web Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
   <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="cursor-glow" id="cursorGlow"></div>
-
-  <header class="header" id="top">
-    <nav class="nav container">
-      <a class="logo" href="#home">FA<span>.</span></a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">
-        <span></span><span></span>
-      </button>
+  <header class="site-header">
+    <nav class="nav wrap" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Franco home"><span class="brand-mark">F</span><span>franco<span class="brand-dot">.</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
       <div class="nav-links" id="navLinks">
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#contact" class="nav-link nav-contact">Contact me <span>↗</span></a>
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+        <a class="nav-cta" href="assets/Franco-Alotinto-Resume.docx" download>Download CV <span>↗</span></a>
       </div>
     </nav>
   </header>
 
   <main>
-    <section class="hero section container" id="home">
-      <div class="hero-copy">
-        <div class="availability reveal"><span class="status-dot"></span> OPEN TO IT SUPPORT &amp; INTERNSHIP ROLES</div>
-        <p class="eyebrow reveal delay-1">HELLO, I'M FRANCO ALOTINTO</p>
-        <h1 class="hero-title reveal delay-2">Building digital<br><span class="gradient-text">experiences</span><br>that matter<span class="accent">.</span></h1>
-        <p class="hero-description reveal delay-3">A 4th-year Information Technology student with a web development background, now looking to start a career in IT Support and Helpdesk. I like solving problems and learning new tools fast.</p>
-        <div class="hero-actions reveal delay-4">
-          <a class="button button-primary" href="#projects">Explore my work <span>↗</span></a>
-          <a class="button button-ghost" href="Franco_Alotinto_Resume.docx" download>Download resume</a>
-          <a class="button button-ghost" href="#contact">Let's connect</a>
-        </div>
-        <div class="hero-meta reveal delay-4"><span>NUEVA ECIJA, PHILIPPINES</span><span class="meta-line"></span><span>BS INFORMATION TECHNOLOGY</span></div>
+    <section class="hero wrap" id="home">
+      <div class="hero-copy reveal">
+        <div class="availability"><span class="pulse"></span> OPEN TO INTERNSHIP OPPORTUNITIES</div>
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Franco<br><span class="gradient-text">Alotinto.</span></h1>
+        <h2>BS Information Technology Student <span class="muted">&</span> Aspiring IT Professional</h2>
+        <p class="hero-description">I build practical web-based systems that help people organize information, simplify daily tasks, and work more efficiently. I’m eager to learn, improve my technical skills, and grow with a professional team.</p>
+        <div class="hero-actions"><a class="btn btn-primary" href="#projects">Explore my work <span>↘</span></a><a class="btn btn-ghost" href="#contact">Let's connect <span>↗</span></a></div>
+        <div class="hero-meta"><span><b>01</b> Based in Nueva Ecija, Philippines</span><span><b>02</b> Always learning, always building</span></div>
       </div>
-
-      <div class="hero-visual reveal delay-3">
+      <div class="hero-visual reveal">
         <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
-        <div class="photo-card">
-          <img src="profile.jpg" alt="Portrait of Franco Alotinto in a black suit and tie" width="720" height="900" fetchpriority="high">
-          <div class="photo-caption"><span class="status-dot"></span> Marvin Franco Apollo C. Alotinto</div>
-        </div>
-        <div class="code-mini">
-          <p><span class="code-purple">const</span> franco = {</p>
-          <p class="indent"><span class="code-blue">role</span>: <span class="code-green">'BSIT Student'</span>,</p>
-          <p class="indent"><span class="code-blue">goal</span>: <span class="code-green">'IT Support'</span></p>
-          <p>};</p>
-        </div>
-        <div class="floating-chip chip-one"><span>⌘</span> Problem solver</div>
-        <div class="floating-chip chip-two"><span>✦</span> Always learning</div>
-        <div class="hero-glow"></div>
+        <div class="photo-frame"><img src="assets/profile.png" alt="Portrait of Franco Alotinto" /></div>
+        <div class="float-card float-code"><span class="mini-dot"></span><div><small>CURRENT FOCUS</small><strong>Web Development</strong></div></div>
+        <div class="float-card float-stack"><span class="stack-icon">{ }</span><div><small>MY APPROACH</small><strong>Learn · Build · Improve</strong></div></div>
+        <div class="visual-caption">FRANCO ALOTINTO <span> / 2026</span></div>
       </div>
-      <a class="scroll-indicator" href="#about"><span></span> SCROLL TO EXPLORE</a>
+      <a class="scroll-cue" href="#about"><span class="scroll-line"></span> SCROLL TO EXPLORE</a>
     </section>
 
     <section class="section about-section" id="about">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">01 / ABOUT ME</p><h2>Curious by nature.<br><span class="muted">Driven to help.</span></h2></div>
-        <div class="about-grid">
-          <div class="about-text reveal">
-            <p class="large-copy">I turn real-world needs into useful digital tools, and I'm ready to keep people's technology running smoothly.</p>
-            <p>I'm Marvin Franco Apollo C. Alotinto, a 4th-year BS Information Technology student at Northern Luzon Adventist College. I've built web-based information systems for a rehabilitation facility and a school clinic, from gathering requirements to deployment.</p>
-            <p>I'm now seeking an opportunity in IT Support or Helpdesk. I have basic knowledge of networking, information security, and Microsoft Office, and I'm hardworking, adaptable, and eager to grow with a team.</p>
-            <a class="text-link" href="#contact">Get in touch <span>↗</span></a>
-          </div>
-          <div class="about-facts reveal delay-2">
-            <div class="fact"><span class="fact-number">01</span><div><h3>Listen</h3><p>I gather requirements directly from the people who will use the system.</p></div></div>
-            <div class="fact"><span class="fact-number">02</span><div><h3>Build</h3><p>I design secure, role-based systems that replace paper-based processes.</p></div></div>
-            <div class="fact"><span class="fact-number">03</span><div><h3>Support</h3><p>I stay patient, troubleshoot step by step, and keep learning from feedback.</p></div></div>
-          </div>
+      <div class="wrap about-grid">
+        <div class="section-heading reveal"><p class="eyebrow">01 / ABOUT ME</p><h2>Curious mind.<br><span class="gradient-text">Practical builder.</span></h2></div>
+        <div class="about-content reveal"><p class="lead">I’m a fourth-year Bachelor of Science in Information Technology student at Northern Luzon Adventist College.</p><p>My experience includes developing web-based information systems, working with databases, and turning real user needs into useful digital workflows. I have collaborated on academic and capstone projects, gathered requirements from users, and used GitHub to work with a team.</p><p>I’m currently looking for an opportunity where I can contribute, learn from experienced professionals, and strengthen my skills in IT support, web development, and information systems.</p>
+          <div class="about-facts"><div><strong>BSIT</strong><span>Degree program</span></div><div><strong>NLAC</strong><span>Northern Luzon Adventist College</span></div><div><strong>PH</strong><span>Philippines</span></div></div>
         </div>
       </div>
     </section>
 
-    <section class="section container" id="skills">
-      <div class="section-heading reveal"><p class="eyebrow">02 / MY TOOLKIT</p><h2>Skills &amp; <span class="muted">technologies.</span></h2><p class="section-subtitle">Tools I have worked with, plus the support skills I bring to a team.</p></div>
-      <div class="skills-grid">
-        <article class="skill-card reveal"><span class="skill-icon">⌨</span><h3>Frontend</h3><div class="tags"><span>Angular</span><span>Astro</span><span>HTML</span><span>CSS</span><span>Tailwind CSS</span><span>Bootstrap</span></div></article>
-        <article class="skill-card reveal delay-1"><span class="skill-icon">⚙</span><h3>Backend</h3><div class="tags"><span>Laravel</span><span>PHP</span><span>Flask</span><span>Python</span></div></article>
-        <article class="skill-card reveal delay-2"><span class="skill-icon">▤</span><h3>Database</h3><div class="tags"><span>MySQL</span><span>MongoDB</span></div></article>
-        <article class="skill-card reveal"><span class="skill-icon">◇</span><h3>Tools</h3><div class="tags"><span>VS Code</span><span>Git / GitHub</span><span>InDesign</span><span>ChatGPT</span><span>Claude</span></div></article>
-        <article class="skill-card reveal delay-1"><span class="skill-icon">☎</span><h3>IT support</h3><div class="tags"><span>Networking basics</span><span>Information security</span><span>Microsoft Office</span><span>Troubleshooting</span></div></article>
-        <article class="skill-card reveal delay-2"><span class="skill-icon">✦</span><h3>Working style</h3><div class="tags"><span>Hardworking</span><span>Adaptable</span><span>Quick learner</span><span>Team player</span></div></article>
+    <section class="section skills-section" id="skills">
+      <div class="wrap"><div class="section-heading reveal"><p class="eyebrow">02 / TOOLKIT</p><h2>Technologies I’ve<br><span class="gradient-text">worked with.</span></h2><p class="section-intro">A growing toolkit built through coursework, personal practice, and hands-on system projects.</p></div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><div class="skill-top"><span class="skill-number">01</span><span class="skill-symbol">◈</span></div><h3>Frontend</h3><p>Building responsive and user-friendly interfaces.</p><div class="tags"><span>Angular</span><span>Astro</span><span>HTML</span><span>CSS</span><span>Tailwind CSS</span><span>Bootstrap</span></div></article>
+          <article class="skill-card reveal"><div class="skill-top"><span class="skill-number">02</span><span class="skill-symbol">⌘</span></div><h3>Backend</h3><p>Creating application logic, APIs, and server-side features.</p><div class="tags"><span>Laravel</span><span>PHP</span><span>Flask</span><span>Python</span></div></article>
+          <article class="skill-card reveal"><div class="skill-top"><span class="skill-number">03</span><span class="skill-symbol">▦</span></div><h3>Databases</h3><p>Storing, organizing, and retrieving application data.</p><div class="tags"><span>MySQL</span><span>MongoDB</span></div></article>
+          <article class="skill-card reveal"><div class="skill-top"><span class="skill-number">04</span><span class="skill-symbol">⌁</span></div><h3>Tools & Workflow</h3><p>Collaborating, troubleshooting, and learning new tools.</p><div class="tags"><span>VS Code</span><span>Git</span><span>GitHub</span><span>InDesign</span><span>ChatGPT</span><span>Claude</span></div></article>
+        </div>
       </div>
     </section>
 
     <section class="section projects-section" id="projects">
-      <div class="container">
-        <div class="section-heading reveal"><p class="eyebrow">03 / SELECTED WORK</p><h2>Projects I’ve <span class="muted">worked on.</span></h2><p class="section-subtitle">Real academic projects first, followed by sample projects that show the kind of IT support tools I want to build.</p></div>
-        <div class="projects-grid">
-
-          <article class="project-card project-feature reveal">
-            <div class="project-preview preview-blue"><div class="preview-window"><div class="preview-bar"><i></i><i></i><i></i></div><div class="preview-layout"><div class="preview-sidebar"></div><div class="preview-content"><b></b><b></b><div class="preview-boxes"><i></i><i></i><i></i></div><div class="preview-lines"></div></div></div></div><span class="preview-label">01 — RECOVERY MONITORING</span></div>
-            <div class="project-info">
-              <div class="project-type">CAPSTONE PROJECT</div>
-              <h3>Resident Information &amp; Recovery Monitoring System</h3>
-              <p>A records and recovery-monitoring system for Metanoia Recovery Center, a DOH-licensed rehabilitation facility.</p>
-              <ul class="project-points">
-                <li>Gathered requirements from facility staff and turned paper-based processes into digital workflows.</li>
-                <li>Built role-based access so each staff member sees only the tools their job requires.</li>
-                <li>Protected sensitive records with auto-expiring login sessions and encrypted HTTPS connections.</li>
-                <li>Worked with a team on GitHub using feature branches.</li>
-              </ul>
-              <div class="tags"><span>Angular</span><span>Laravel</span><span>MySQL</span></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal delay-1">
-            <div class="project-preview preview-green"><div class="clinic-cross">+</div><span class="preview-label">02 — CLINIC RECORDS</span></div>
-            <div class="project-info">
-              <div class="project-type">ACADEMIC PROJECT</div>
-              <h3>Patient Record Management System</h3>
-              <p>An automated system for clinical data entry, storage, and retrieval.</p>
-              <ul class="project-points">
-                <li>Tracks medicine stock levels in real time to help prevent shortages.</li>
-                <li>Simplified student registration with a faster input workflow.</li>
-              </ul>
-              <div class="tags"><span>Angular</span><span>Laravel</span><span>MySQL</span></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal">
-            <div class="project-preview preview-orange"><div class="news-stack"><span>HELP</span><span>DESK</span></div><span class="preview-label">03 — TICKETING</span></div>
-            <div class="project-info">
-              <div class="project-type sample">SAMPLE PROJECT · IT SUPPORT</div>
-              <h3>IT Helpdesk Ticketing System</h3>
-              <p>Staff submit IT issues as tickets. Technicians assign, update, and close them while everyone tracks the status.</p>
-              <ul class="project-points">
-                <li>Ticket priority, status, and assignment.</li>
-                <li>Separate views for users and technicians.</li>
-              </ul>
-              <div class="tags"><span>Laravel</span><span>Tailwind CSS</span><span>MySQL</span></div>
-            </div>
-          </article>
-
-          <article class="project-card reveal delay-1">
-            <div class="project-preview preview-pink"><div class="big-glyph">?</div><span class="preview-label">04 — KNOWLEDGE BASE</span></div>
-            <div class="project-info">
-              <div class="project-type sample">SAMPLE PROJECT · IT SUPPORT</div>
-              <h3>IT Troubleshooting Knowledge Base</h3>
-              <p>A searchable site of step-by-step fixes for common problems such as Wi-Fi, printers, passwords, and slow computers.</p>
-              <ul class="project-points">
-                <li>Guides grouped by category with quick search.</li>
-                <li>Clear steps that non-technical users can follow.</li>
-              </ul>
-              <div class="tags"><span>Astro</span><span>Tailwind CSS</span><span>Markdown</span></div>
-            </div>
-          </article>
-
-          <article class="project-card project-wide reveal">
-            <div class="project-preview preview-purple"><div class="big-glyph code">&lt;/&gt;</div><span class="preview-label">05 — PERSONAL SITE</span></div>
-            <div class="project-info">
-              <div class="project-type">PERSONAL PROJECT</div>
-              <h3>Developer Portfolio Website</h3>
-              <p>This responsive portfolio, built with plain HTML, CSS, and JavaScript and hosted for free on GitHub Pages.</p>
-              <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>GitHub Pages</span></div>
-              <a class="text-link" href="https://github.com/francoalotinto1-max" target="_blank" rel="noreferrer">View on GitHub <span>↗</span></a>
-            </div>
-          </article>
-
-        </div>
-        <p class="project-note">Projects marked “Sample” are concept projects that show the kind of work I want to do in IT support. They are not client work.</p>
+      <div class="wrap">
+        <div class="projects-heading"><div class="section-heading reveal"><p class="eyebrow">03 / SELECTED WORK</p><h2>Projects I’ve<br><span class="gradient-text">worked on.</span></h2><p class="section-intro">A selection of academic, capstone, and practice projects focused on solving real workflow problems.</p></div>
+          <div class="carousel-controls reveal"><button class="carousel-btn" id="prevProject" aria-label="Previous project">←</button><button class="carousel-btn" id="nextProject" aria-label="Next project">→</button></div></div>
+        <div class="carousel-window"><div class="project-track" id="projectTrack">
+          <article class="project-card featured"><div class="project-art art-metanoia"><span class="art-label">CAPSTONE PROJECT</span><div class="mock-dashboard"><div class="mock-sidebar"><i></i><i></i><i></i><i></i></div><div class="mock-main"><div class="mock-title"></div><div class="mock-stats"><i></i><i></i><i></i></div><div class="mock-chart"><b></b><b></b><b></b><b></b><b></b><b></b><b></b></div><div class="mock-row"></div></div></div><span class="art-index">01</span></div><div class="project-info"><div class="project-meta"><span>HEALTHCARE · RECORDS</span><span>01 / 06</span></div><h3>Metanoia Resident Information & Recovery Monitoring System</h3><p>A web-based system designed to digitize resident records and support recovery monitoring for a rehabilitation facility. Focuses on role-based access, organized information, and more efficient staff workflows.</p><div class="tags"><span>Laravel</span><span>Angular</span><span>MySQL</span><span>REST API</span></div><div class="project-foot"><span>Team capstone</span><span class="project-arrow">↗</span></div></div></article>
+          <article class="project-card"><div class="project-art art-clinic"><span class="art-label">ACADEMIC PROJECT</span><div class="clinic-ui"><div class="clinic-head"></div><div class="clinic-line"></div><div class="clinic-line short"></div><div class="clinic-pills"><i></i><i></i><i></i></div><div class="clinic-table"><i></i><i></i><i></i><i></i></div></div><span class="art-index">02</span></div><div class="project-info"><div class="project-meta"><span>HEALTHCARE · DATABASE</span><span>02 / 06</span></div><h3>Patient Record Management System</h3><p>An automated patient-record application for clinical data entry, storage, and retrieval. Includes medicine inventory monitoring and a more organized workflow for maintaining student and patient information.</p><div class="tags"><span>Laravel</span><span>PHP</span><span>MySQL</span></div><div class="project-foot"><span>Academic project</span><span class="project-arrow">↗</span></div></div></article>
+          <article class="project-card"><div class="project-art art-barangay"><span class="art-label">SYSTEM DEVELOPMENT</span><div class="document-ui"><div class="doc-seal">B</div><div class="doc-lines"><i></i><i></i><i></i></div><div class="doc-button"></div></div><span class="art-index">03</span></div><div class="project-info"><div class="project-meta"><span>GOVERNMENT · RECORDS</span><span>03 / 06</span></div><h3>Barangay Records & Document Request System</h3><p>A planned web-based system for managing barangay resident records and document requests, with a focus on making record retrieval and request processing more organized.</p><div class="tags"><span>Angular</span><span>Laravel</span><span>MySQL</span></div><div class="project-foot"><span>Capstone development</span><span class="project-arrow">↗</span></div></div></article>
+          <article class="project-card"><div class="project-art art-sport"><span class="art-label">WEB APPLICATION</span><div class="sports-ui"><div class="sports-banner"></div><div class="sports-cards"><i></i><i></i><i></i></div><div class="sports-line"></div></div><span class="art-index">04</span></div><div class="project-info"><div class="project-meta"><span>CONTENT · MANAGEMENT</span><span>04 / 06</span></div><h3>Sport News Center</h3><p>A sports news website concept with reader-facing news browsing and admin tools for managing articles, categories, media, promotions, reviews, and saved articles.</p><div class="tags"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>Tailwind CSS</span></div><div class="project-foot"><span>Web development project</span><span class="project-arrow">↗</span></div></div></article>
+          <article class="project-card"><div class="project-art art-enroll"><span class="art-label">WEB APPLICATION</span><div class="enroll-ui"><div class="enroll-logo">NLAC</div><div class="enroll-field"></div><div class="enroll-field"></div><div class="enroll-field"></div><div class="enroll-submit"></div></div><span class="art-index">05</span></div><div class="project-info"><div class="project-meta"><span>EDUCATION · REGISTRATION</span><span>05 / 06</span></div><h3>Online Student Registration System</h3><p>A student registration workflow concept for collecting student information and enrollment details through an online form and database-backed application.</p><div class="tags"><span>Laravel</span><span>PHP</span><span>MySQL</span><span>DaisyUI</span></div><div class="project-foot"><span>Academic project</span><span class="project-arrow">↗</span></div></div></article>
+          <article class="project-card"><div class="project-art art-clinic"><span class="art-label">ACADEMIC SYSTEM</span><div class="clinic-ui"><div class="clinic-head"></div><div class="clinic-line"></div><div class="clinic-line short"></div><div class="clinic-pills"><i></i><i></i><i></i></div><div class="clinic-table"><i></i><i></i><i></i><i></i></div></div><span class="art-index">06</span></div><div class="project-info"><div class="project-meta"><span>EDUCATION · HEALTHCARE</span><span>06 / 07</span></div><h3>School Clinic Record System</h3><p>A school clinic information system concept for maintaining patient records, supporting walk-in consultations, managing medication stock, and preparing clinic reports for authorized staff.</p><div class="tags"><span>Laravel</span><span>PHP</span><span>MySQL</span></div><div class="project-foot"><span>Academic system project</span><span class="project-arrow">↗</span></div></div></article>
+          <article class="project-card"><div class="project-art art-helpdesk"><span class="art-label">WEB APPLICATION</span><div class="help-ui"><div class="help-top"></div><div class="help-ticket"><i></i><b></b><em></em></div><div class="help-ticket"><i></i><b></b><em></em></div><div class="help-ticket"><i></i><b></b><em></em></div></div><span class="art-index">07</span></div><div class="project-info"><div class="project-meta"><span>IT SUPPORT · TICKETING</span><span>07 / 07</span></div><h3>Helpdesk Ticketing System</h3><p>A helpdesk system concept for receiving support requests, organizing reported issues, and tracking their status through a centralized interface.</p><div class="tags"><span>PHP</span><span>MySQL</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div><div class="project-foot"><span>Practice project</span><span class="project-arrow">↗</span></div></div></article>
+        </div></div>
+        <div class="carousel-bottom"><div class="carousel-dots" id="carouselDots" aria-label="Choose project"></div><span class="carousel-hint">DRAG OR USE ARROWS TO EXPLORE <span>↔</span></span></div>
+        <p class="project-note">Note: Project descriptions summarize work and system concepts discussed during development. Some projects may be in progress; technologies and features can change as development continues.</p>
       </div>
     </section>
 
-    <section class="section container" id="education">
-      <div class="section-heading reveal"><p class="eyebrow">04 / EDUCATION</p><h2>My learning <span class="muted">journey.</span></h2></div>
-      <div class="timeline reveal">
-        <div class="timeline-item"><span class="timeline-dot"></span><div class="timeline-date">CURRENT • FOURTH YEAR</div><h3>Bachelor of Science in Information Technology</h3><p>Northern Luzon Adventist College (NLAC) · Artacho, Sison, Pangasinan</p><span class="timeline-detail">Building knowledge in programming, web development, databases, networking, and information systems.</span></div>
-      </div>
-    </section>
+    <section class="section approach-section"><div class="wrap approach-grid"><div class="section-heading reveal"><p class="eyebrow">04 / HOW I WORK</p><h2>Good work starts<br>with <span class="gradient-text">curiosity.</span></h2></div><div class="approach-list"><div class="approach-item reveal"><span>01</span><div><h3>Understand the problem</h3><p>I listen to users and understand the process before thinking about the solution.</p></div></div><div class="approach-item reveal"><span>02</span><div><h3>Build with purpose</h3><p>I focus on clear workflows, useful features, and interfaces that are easy to understand.</p></div></div><div class="approach-item reveal"><span>03</span><div><h3>Keep learning</h3><p>I welcome feedback, explore new tools, and keep improving what I create.</p></div></div></div></div></section>
 
-    <section class="section contact-section" id="contact">
-      <div class="container contact-inner reveal">
-        <p class="eyebrow">05 / LET'S CONNECT</p>
-        <h2>Looking for a reliable<br>IT support teammate<span class="gradient-text">?</span></h2>
-        <p class="contact-copy">I'm open to IT Support, Helpdesk, and internship opportunities. Send me a message and I'll reply as soon as I can.</p>
-        <a class="button button-primary contact-button" href="mailto:francoalotinto1@gmail.com">Say hello <span>↗</span></a>
-        <div class="social-links"><a href="mailto:francoalotinto1@gmail.com">francoalotinto1@gmail.com</a><a href="https://github.com/francoalotinto1-max" target="_blank" rel="noreferrer">GitHub ↗</a><a href="Franco_Alotinto_Resume.docx" download>Resume ↓</a></div>
-        <p class="contact-location">Rizal, Nueva Ecija, Philippines</p>
-      </div>
-    </section>
+    <section class="contact-section" id="contact"><div class="wrap contact-wrap reveal"><p class="eyebrow">05 / GET IN TOUCH</p><h2>Have an opportunity<br>or idea? <span class="gradient-text">Let’s talk.</span></h2><p>I’m open to internship opportunities, collaboration, and learning experiences. Feel free to reach out.</p><a class="email-link" href="mailto:francoalotinto1@gmail.com">francoalotinto1@gmail.com <span>↗</span></a><div class="contact-details"><a href="tel:+639679554218">+63 967 955 4218</a><span>Rizal, Nueva Ecija, Philippines</span><a href="https://github.com/francoalotinto1-max" target="_blank" rel="noreferrer">GitHub ↗</a></div></div></section>
   </main>
-
-  <footer class="footer container"><a class="logo" href="#home">FA<span>.</span></a><p>Designed &amp; built by Franco Alotinto · <span id="year"></span></p><a href="#top" class="back-top">BACK TO TOP ↑</a></footer>
-  <script src="script.js"></script>
+  <footer class="footer"><div class="wrap footer-inner"><a class="brand" href="#home"><span class="brand-mark">F</span><span>franco<span class="brand-dot">.</span></span></a><span>Designed & built by Franco Alotinto</span><span>© <span id="year">2026</span> · KEEP LEARNING.</span></div></footer>
 </body>
 </html>
